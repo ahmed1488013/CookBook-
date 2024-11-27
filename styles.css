@@ -1,0 +1,155 @@
+body {
+    background-color: #FFF8DC; /* Cornsilk background */
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #D2691E; /* Chocolate color */
+    font-size: 24px;
+}
+
+button#addRecipeBtn {
+    background-color: #D2691E;
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button#addRecipeBtn:hover {
+    background-color: #A0522D; /* Darker chocolate */
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button.category {
+    background-color: #FFA07A; /* Salmon for category buttons */
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.category:hover {
+    background-color: #FF7F50; /* Slightly darker salmon */
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #D2691E;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#recipeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #FFF;
+    border: 1px solid #D2691E;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(33% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D2691E;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    margin: 5px 0;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card {
+        width: 100%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#addRecipeForm {
+    background-color: #FFF;
+    padding: 20px;
+    border: 1px solid #D2691E;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#addRecipeForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#addRecipeForm label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#addRecipeForm input,
+#addRecipeForm textarea,
+#addRecipeForm select {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #D2691E;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addRecipeForm button {
+    margin-top: 15px;
+    background-color: #D2691E;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addRecipeForm button:hover {
+    background-color: #A0522D;
+}

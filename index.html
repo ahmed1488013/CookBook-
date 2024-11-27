@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookBook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CookBook</h1>
+        <button id="addRecipeBtn">Add Recipe</button>
+    </header>
+
+    <nav>
+        <button class="category" data-category="appetizers">Appetizers</button>
+        <button class="category" data-category="main-courses">Main Courses</button>
+        <button class="category" data-category="desserts">Desserts</button>
+        <button id="showAllBtn">Show All</button>
+    </nav>
+
+    <input type="text" id="searchInput" placeholder="Search recipes..." aria-label="Search recipes">
+
+    <main>
+        <div id="recipeContainer"></div>
+    </main>
+
+    <div id="addRecipeForm" class="hidden">
+        <form>
+            <label for="title">Recipe Title:</label>
+            <input type="text" id="title" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" required></textarea>
+
+            <label for="steps">Steps:</label>
+            <textarea id="steps" required></textarea>
+
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="appetizers">Appetizers</option>
+                <option value="main-courses">Main Courses</option>
+                <option value="desserts">Desserts</option>
+            </select>
+
+            <button type="submit">Add Recipe</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
